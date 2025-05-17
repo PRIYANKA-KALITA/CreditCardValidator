@@ -1,0 +1,90 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+body {
+  background: linear-gradient(135deg, #5bafba, #8D94B4); /* Gradient background */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  padding: 30px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.header {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2e2e2e;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  font-size: 18px;
+  transition: all 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #5bbaa8;
+  outline: none;
+  box-shadow: 0 0 5px rgba(91, 180, 186, 0.5);
+}
+
+.error-message {
+  color: #ff4d4d;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.valid-message {
+  color: #4CAF50;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+button {
+  background-color: #5ba5ba;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #467a90;
+}

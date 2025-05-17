@@ -1,0 +1,110 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #6D5BBA, #8D94B4); /* Gradient background */
+  color: #333;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.App {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  margin-bottom: 30px;
+}
+
+/* Header Styling */
+.App-header {
+  background-color: #ffffff;
+  color: #333;
+  min-height: 60vh;
+  width: 100%;
+  max-width: 450px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.App-header:hover {
+  transform: translateY(-5px);
+}
+
+/* Styling for the credit card input box */
+input[type="text"] {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 80%;
+  margin: 15px 0;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #6D5BBA;
+}
+
+/* Styling for error message */
+span {
+  color: #e74c3c;  /* Error color */
+  font-weight: 600;
+}
+
+/* Styling for valid message */
+span.valid {
+  color: #2ecc71;  /* Green for valid message */
+  font-weight: 600;
+}
+
+/* Link Styling */
+.App-link {
+  color: #6D5BBA;
+  font-size: 1.1rem;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.App-link:hover {
+  color: #ff6f61;
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .App-header {
+    padding: 20px;
+    font-size: 16px;
+  }
+
+  .App-logo {
+    height: 30vmin;
+  }
+  
+  .App-link {
+    font-size: 1rem;
+  }
+}
